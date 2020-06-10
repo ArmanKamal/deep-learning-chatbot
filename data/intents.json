@@ -31,21 +31,6 @@
          "responses": ["Thank you so much for letting us know about this, Sir.", "I am so sorry to hear about this, sir.","I completely understand how you feel, Sir.","Thank you so much for your patience/understanding,sir.","I will take action about this right away. Sorry for the inconvenience."],
          "context_set": ""
         },
-        {"tag": "price",
-         "patterns": ["what is the price of this product?", "can you tell me the price of this shirt?"],
-         "responses": ["This shirt is priced 470 BDT.", "The price of this product is 470 taka only."],
-         "context_set": ""
-        },
-        {"tag": "asking_price",
-         "patterns": ["Can this price be considered? I will give 400 taka.", "The price is a bit high. I can afford 400 taka"],
-         "responses": ["Sorry sir, you have to increase the amount.", "Sorry but we can not sell product at this price. You have to increase the value"],
-         "context_set": ""
-        },
-        {"tag": "selling_price",
-         "patterns": ["I can provide maximum 430 taka.", "My last bid is 430 taka."],
-         "responses": ["Okay. We are placing your order sir. Thank you for shopping with us!"],
-         "context_set": ""
-        },
      	{"tag": "query_receive",
          "patterns": ["When i will receive my item", "How long it will take receive my item","When can I get my items"],
          "responses": ["You will get your items delivered by tomorrow."],
@@ -87,7 +72,7 @@
        {   
          "tag": "change_order",
          "patterns": ["Can I change my orders", "Can I add new items to the previous order", "Can I change some items from the order"],
-         "responses": ["Yes sir in order to change you have to call our helpline"."Call our helpline or Email us to change the order."],
+         "responses": ["Yes sir in order to change you have to call our helpline","Call our helpline or Email us to change the order."],
          "context_set": 
         },
 	     {   
