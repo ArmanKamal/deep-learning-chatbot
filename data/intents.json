@@ -1,34 +1,34 @@
 {
     "intents": 
     [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "ki khobor", "bhai acho", "kemon achen", "bhalo naki"],
-         "responses": ["Hello!", "Good to see you again!", "Hi there, kivabe help korte pari?", "bhalo achi", "onek bhalo."],
+         {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
          "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "chole jai", "pore kotha hobe"],
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
          "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
          "context_set": ""
         },
-        {"tag": "age",
-         "patterns": ["how old are you", "apnar boyos koto", "what is your age", "how old are you", "age?"],
-         "responses": ["I am 'something' minutes old...", "I am just a bot"],
-         "context_set": ""
-        },
         {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?"],
-         "responses": ["You can call me GOOD BOI.", "I'm GOOD BOI!", "I'm GOOD BOI aka GB."],
+         "patterns": ["what is your name", "what should I call you", "what is your name?"],
+         "responses": ["You can call me Bargainly.", "I'm Bargainly!", "I'm called as Bargainly"],
          "context_set": ""
         },
         {"tag": "shop",
-         "patterns": ["Id like to buy something", "whats on the menu", "what do you reccommend?", "ki ache apnar shop e", "ki kinbo"],
-         "responses": ["Lal shirt ache :) Niben?", "Apatoto Lal shirt... :)"],
+         "patterns": ["Id like to buy something", "whats on the menu", "what do you recommend?"],
+         "responses": ["A classy red shirt is available for you.", "You can have a look at our elegant shirts."],
          "context_set": ""
         },
         {"tag": "hours",
-         "patterns": ["when are you guys open", "what are your hours", "hours of operation", "kokhon dokan khulben"],
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
          "responses": ["We are open 7am-4pm Monday-Friday!"],
+         "context_set": ""
+        },
+        {"tag": "complaints",
+         "patterns": ["The order didn’t arrive on time", "I received the wrong item", "i had a bad experience in your store", "i am getting conflicting answers", "there was no response to my email and call"],
+         "responses": ["Thank you so much for letting us know about this, Sir.", "I’m so sorry to hear about this, sir.","I completely understand how you feel, Sir.","Thank you so much for your patience/understanding,sir.","I will take action about this right away. Sorry for the inconvenience."],
          "context_set": ""
         }
    ]
