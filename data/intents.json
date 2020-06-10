@@ -27,8 +27,8 @@
          "context_set": ""
         },
         {"tag": "complaints",
-         "patterns": ["The order didn’t arrive on time", "I received the wrong item", "i had a bad experience in your store", "i am getting conflicting answers", "there was no response to my email and call"],
-         "responses": ["Thank you so much for letting us know about this, Sir.", "I’m so sorry to hear about this, sir.","I completely understand how you feel, Sir.","Thank you so much for your patience/understanding,sir.","I will take action about this right away. Sorry for the inconvenience."],
+         "patterns": ["The order did not arrive on time", "I received the wrong item", "I had a bad experience in your store", "i am getting conflicting answers", "there was no response to my email and call"],
+         "responses": ["Thank you so much for letting us know about this, Sir.", "I am so sorry to hear about this, sir.","I completely understand how you feel, Sir.","Thank you so much for your patience/understanding,sir.","I will take action about this right away. Sorry for the inconvenience."],
          "context_set": ""
         },
         {"tag": "price",
@@ -43,9 +43,83 @@
         },
         {"tag": "selling_price",
          "patterns": ["I can provide maximum 430 taka.", "My last bid is 430 taka."],
-         "responses": ["Okay. We're placing your order sir. Thank you for shopping with us!"],
+         "responses": ["Okay. We are placing your order sir. Thank you for shopping with us!"],
          "context_set": ""
         },
-        
+     	{"tag": "query_receive",
+         "patterns": ["When i will receive my item", "How long it will take receive my item","When can I get my items"],
+         "responses": ["You will get your items delivered by tomorrow."],
+         "context_set": ""
+        },
+    	{"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That is helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context_set": 
+        },
+  	     {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Bkash?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and Bkash", "We accept most major credit cards and Bkash"],
+	     "context_set": 
+        },
+	    {"tag": "deliveryman",
+         "patterns": ["Can I get the contact details of the deliveryman", "How can I contact the delivery man?" ],
+         "responses": ["You can contact the deliveryman assigned to your order by calling to our customer care number"],
+         "context_set": 
+        },
+        {   
+         "tag": "coupon",
+         "patterns": ["what is the coupon", "send me the coupon","Is there any coupon code"],
+         "responses": ["Sorry, no coupon", "No coupon available","Not available right now"],
+         "context_set": 
+        },
+    	 {   
+         "tag": "refund",
+         "patterns": ["I want a refund", "Can I get a refund for this product?","Is there any refund policy available"],
+         "responses": ["You will get a refund if your criteria meets the refund policy, sir."],
+         "context_set": 
+        },
+	     {   
+         "tag": "return",
+         "patterns": ["I want to return this product", "This product is defective. I want to return it"],
+         "responses": ["Sorry for the bad experience. We will give you a fresh copy and you can return this product."],
+         "context_set": 
+        },
+       {   
+         "tag": "change_order",
+         "patterns": ["Can I change my orders", "Can I add new items to the previous order", "Can I change some items from the order"],
+         "responses": ["Yes sir in order to change you have to call our helpline"."Call our helpline or Email us to change the order."],
+         "context_set": 
+        },
+	     {   
+         "tag": "cancel_order",
+         "patterns": ["Can I cancel my orders?", "How can I cancel my previous order.", "Can I cancel the order."],
+         "responses": ["Yes sir, you can cancel the order on the same day of placing an order, but not after that. Thank you"],
+         "context_set": 
+        },
+        {
+         "tag": "discount",
+         "patterns": ["Is there any discount", "How can I get some discount", "Can you reduce the products prices"],
+         "responses": ["At the moment there is no discount available","There is no discount available at this moment"],
+         "context_set": 
+        },
+        {
+         "tag": "stock",
+         "patterns": ["Is this product available is in the stock", "Is it available?"],
+         "responses": ["Yes sir, it is available in the stock.", "Yes it is available."],
+         "context_set": 
+        },
+        {
+   	     "tag": "quality",
+         "patterns": ["The item quality was really bad ", "Some of my items were damaged", "The product I received is damaged"],
+         "responses": ["Sorry sir ! Call our helpline for exchange ","Sorry sir! You will receive a fresh product by tomorrow."],
+         "context_set": 
+         },
+        {
+   	     "tag": "delivery_fee",
+         "patterns": ["How much does the shipping cost ", "Is there any shipping fee"],
+         "responses": ["Inside Dhaka it is free! Outside Dhaka 120tk only"],
+         "context_set": 
+        }  
    ]
 }
+
