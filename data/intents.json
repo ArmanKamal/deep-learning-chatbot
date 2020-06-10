@@ -30,6 +30,22 @@
          "patterns": ["The order didn’t arrive on time", "I received the wrong item", "i had a bad experience in your store", "i am getting conflicting answers", "there was no response to my email and call"],
          "responses": ["Thank you so much for letting us know about this, Sir.", "I’m so sorry to hear about this, sir.","I completely understand how you feel, Sir.","Thank you so much for your patience/understanding,sir.","I will take action about this right away. Sorry for the inconvenience."],
          "context_set": ""
-        }
+        },
+        {"tag": "price",
+         "patterns": ["what is the price of this product?", "can you tell me the price of this shirt?"],
+         "responses": ["This shirt is priced 470 BDT.", "The price of this product is 470 taka only."],
+         "context_set": ""
+        },
+        {"tag": "asking_price",
+         "patterns": ["Can this price be considered? I will give 400 taka.", "The price is a bit high. I can afford 400 taka"],
+         "responses": ["Sorry sir, you have to increase the amount.", "Sorry but we can not sell product at this price. You have to increase the value"],
+         "context_set": ""
+        },
+        {"tag": "selling_price",
+         "patterns": ["I can provide maximum 430 taka.", "My last bid is 430 taka."],
+         "responses": ["Okay. We're placing your order sir. Thank you for shopping with us!"],
+         "context_set": ""
+        },
+        
    ]
 }
